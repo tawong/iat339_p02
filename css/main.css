@@ -92,6 +92,7 @@ CARD STYLING
 
 /* On mouse-over, add a deeper shadow */
 .swatch-card:hover {
+    transform: translateY(-6px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -112,6 +113,7 @@ CARD STYLING
 
 /* On mouse-over, add a deeper shadow */
 .icon-card:hover {
+    transform: translateY(-6px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -132,6 +134,7 @@ CARD STYLING
 
 /* On mouse-over, add a deeper shadow */
 .photo-card:hover {
+    transform: translateY(-6px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -174,7 +177,7 @@ a {
 }
 
 a:hover {
-    color: #7AD7DF;
+    color: #9fa027;
     text-decoration:none;
     transition: 0.5s;
 }
