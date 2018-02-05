@@ -11,6 +11,7 @@ body {
 p {
     width: 50%;
     line-height: 1.8;
+    padding-left: 1em;
 }
 
 section:not([id]) {
@@ -208,7 +209,7 @@ a:hover {
 }
 
 .nav-button:hover {
-    background-color: #7AD7DF; /* Green */
+    background-color: #7AD7DF; /* Blue */
     border: none;
     color: white;
     padding: 15px 37px;
@@ -302,4 +303,41 @@ COMBINED ELEMENTS
 .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
     color: white;
     background-color: #BFC031;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #efefef;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 10px 6px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:200;
+    color: #9fa027;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #7AD7DF;
+}
+
+.sidenav-header {
+    width: 100%;
+    line-height: 0.2;
+    font-size:20px;
+    text-align: left;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
 }
