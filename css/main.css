@@ -312,7 +312,7 @@ COMBINED ELEMENTS
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fcfcfc;
+    background-color: #efefef;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -321,6 +321,7 @@ COMBINED ELEMENTS
     padding: 6px 10px 6px 20px;
     text-decoration: none;
     font-size: 14px;
+    font-weight:200;
     color: #9fa027;
     display: block;
 }
@@ -335,7 +336,6 @@ COMBINED ELEMENTS
     font-size:20px;
     text-align: left;
 }
-
 
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
