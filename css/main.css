@@ -197,56 +197,54 @@ a:hover {
 }
 
 .nav-button {
-    background-color: #BFC031; /* Green */
-    border: none;
+    border: 3px solid #BFC031; /* Green */
+    background-color: white; 
+    color: #BFC031;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.nav-button:hover {
+    border: 3px solid #BFC031; /* Green */
+    background-color: #BFC031; 
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 8px;
 }
 
-.nav-button:hover {
-    background-color: #7AD7DF; /* Blue */
-    border: none;
-    color: white;
-    padding: 15px 37px;
+.form-button {
+    border: 2px solid #BFC031; /* Green */
+    background-color: white; 
+    color: #BFC031;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    transition: 0.5s;
-    border-radius: 8px;
+    transition: 0.4s;
 }
 
-.form-button {
-    background-color: #BFC031; /* Green */
-    border: none;
+.form-button:hover {
+    border: 2px solid #BFC031; /* Green */
+    background-color: #BFC031; 
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 8px;
-}
-
-.form-button:hover {
-    background-color: #7AD7DF; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
     transition: 0.5s;
-    border-radius: 8px;
 }
 
 .form-input[type=text]{
+    color: #1a1a1a;
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -259,7 +257,7 @@ a:hover {
 }
 
 .form-input[type=text]:focus {
-    width: 25%;
+    width: 30%;
 }
 
 /* 
