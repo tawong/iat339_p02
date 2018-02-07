@@ -18,72 +18,49 @@
     </head>
 
     <body>
-        <h1>Cookie Craft: A Style Guide</h1>
+        <h1 class="main">Cookie Craft: A Style Guide</h1>
 
         <!--Main Nav for Deliverable-->
-        <nav>
+        <nav class="sidenav">
+
+            <p class="sidenav-header logotype">Cookie Craft</p>
+            <p class="sidenav-header">Style Guide</p>
 
             <!-- Main Style Guide Components-->
-            <p>
-                Go to: 
-            </p>
+            <a href="#brandStyle">Brand Style</a>
+            <a href="#colours">Colour Swatches</a>
+            <a href="#icons">Iconography</a>
+            <a href="#images">Photography</a>
 
-            <ul>
+            <a href="#textComp">Text Components</a>
+            <a href="#headings">Headings</a>
+            <a href="#paragraph">Paragraphs</a>
+            <a href="#bulletList">Bulletted List</a>
+            <a href="#numberList">Numbered List</a>
 
-                <!-- <a> (anchor) element links to different points in the document, or to different documents or links entirely.-->
+            <a href="#intComp">Interactive Components</a>
+            <a href="#txtLink">In-Text Link</a>
+            <a href="#navButton">Navigation Button</a>
+            <a href="#formButton">Form Button</a>
+            <a href="#txtInput">Text Input Field</a>
+            
+            <a href="#combinedComp">Combined Components</a>
+            <a href="#mainNav">Main Nav Bar</a>
+            <a href="#grid">Grid Structure</a>
+            <a href="#prodList">Product Listing</a>
+        </nav>
 
-                <li><a href="#brand">Core Brand Concepts</a></li>
-                <li><a href="#brandStyle">Brand Style</a></li>
-                <li><a href="#brandComp">Brand Components</a></li>
 
-            </ul>
+        <!-- BRAND STYLE: Art direction, visuals, colours -->
+        <section id="brandStyle" class="main">
+            <h2>Brand Style</h2>
 
-            <!-- Devices: User Flow Wireframes-->
-            <p>
-                User Flow Wireframes:  
-            </p>
-
+            <h4>User Flow Wireframes</h4>
             <ul>
                 <li><a href="https://invis.io/Z2FK3RNXQ3V">Smartwatch (iOS)</a></li>
                 <li><a href="https://invis.io/N3FJTRUP4J8">Smartphone (iOS)</a></li>
                 <li><a href="https://invis.io/2VFK3SXHKRN">Gaming Console (Xbox One)</a></li>
             </ul>
-
-        </nav>
-
-
-        <!-- BRANDING CONCEPT: Core business proposition and mission statement -->
-        <section id="brand">
-            <h2>Core Brand Concepts</h2>
-
-            <section>
-                <h3>About Cookie Craft</h3>
-                <p>Cookie Craft is a small-batch Canadian artisan cookie company that specializes in making fresh customized cookie dough that is all-natural, organic, corn syrup-free, with nut-free and gluten-free options. We opened our very first brick-and-mortar shop in 2005, and have been handcrafting cookie confections made from premium ingredients from local farms across British Columbia ever since.</p>      
-            </section>
-
-            <section>
-                <h3>Who We Are</h3>
-                <p>Cookie Craft is fun, quirky, and adventurous! We’ll never say no to a flavour combination, so you can be as creative as you want with what goes into your cookie dough.</p>
-            </section>
-
-            <section>
-                <h3>Why We're Different</h3>
-                <p>Save time and hassle with ready-made cookie dough, which you can customize to your hearts delight! We offer unique ingredients that we’ve worked extra hard to source just for you (vary by season).</p>
-
-                <p>The process is simple: drop by the shop, pick your ingredients, and we’ll whip up as much cookie dough as you need. Then, drop by our toppings bar to sprinkle on your cookies, and sit tight as we package your dough. All the instructions are found on the package, and we’ll even throw in cookie craft idea to accompany your unique recipe. </p>
-            </section>
-        </section>
-
-        <!-- BRAND STYLE: Art direction, visuals, colours -->
-        <section id="brandStyle">
-            <h2>Brand Style</h2>
-
-            <ul>
-                <li><a href="#colours">Colours</a></li>
-                <li><a href="#icons">Iconography</a></li>
-                <li><a href="#images">Photography</a></li>
-            </ul>
-
 
             <!-- COLOUR CARDS -->
             <section id="colours">
@@ -203,7 +180,7 @@
                 <div class="photo-card">
                     <img src="img/art-direct/art-direct2.jpg" alt="art-direct2">
                     <div class="desc">
-                        <h4><b>Flat material design</b></h4> 
+                        <h4><b>Flat design</b></h4> 
                     </div>
                 </div>
 
@@ -235,16 +212,10 @@
         </section>
 
         <!-- BRAND COMPONENTS: Interactive, text, combined elements -->
-        <section id="brandComp">
-            <h2>Brand Components</h2>
+        <section id="textComp" class="main">
+            <h2>Text Components</h2>
 
-            <ul>
-                <li><a href="#txtComp">Typography</a></li>
-                <li><a href="#intComp">Interactive Components</a></li>
-                <li><a href="#combinedComp">Combined Elements</a></li>
-            </ul>
-
-            <section id="txtComp">
+            <section>
                 <h3>Typography</h3>
                 <p>Typefaces: Lato, Fredoka One (logotype)</p>
 
@@ -258,8 +229,8 @@
                 <p><code>&lt;h1 class="logotype"&gt; Cookie Craft &lt;h1&gt;</code></p>
 
                 <!-- HEADING LEVELS -->
-                <section>
-                    <h4>Heading Levels: Lato</h4>
+                <section id="headings">
+                    <h3>Heading Levels: Lato</h3>
 
                     <h1>Heading 1</h1>
                     <h2>Heading 2</h2>
@@ -274,35 +245,36 @@
                     <p><code>&lt;h3&gt; Heading 3 &lt;h3&gt;</code></p>
                 </section>
 
+            </section>
 
-                <!-- PARAGRAPH -->
-                <section>
-                    <h4>Body: Lato</h4>
-                    <p>Cookie Craft is fun, quirky, and adventurous! We’ll never say no to a flavour combination, so you can be as creative as you want with what goes into your cookie dough.</p>
+            <!-- PARAGRAPH -->
+            <section id="paragraph">
+                <h3>Paragraph: Lato</h3>
+                <p>Cookie Craft is fun, quirky, and adventurous! We’ll never say no to a flavour combination, so you can be as creative as you want with what goes into your cookie dough.</p>
 
-                    <h4>CSS Selector:</h4>
-                    <p>p</p>
+                <h4>CSS Selector:</h4>
+                <p>p</p>
 
-                    <h4>Sample Code:</h4>
-                    <p><code>&lt;p&gt; Cookie Craft is fun, quirky, and adventurous! We’ll never say no to a flavour combination, so you can be as creative as you want with what goes into your cookie dough. &lt;/p&gt;</code></p>
+                <h4>Sample Code:</h4>
+                <p><code>&lt;p&gt; Cookie Craft is fun, quirky, and adventurous! We’ll never say no to a flavour combination, so you can be as creative as you want with what goes into your cookie dough. &lt;/p&gt;</code></p>
 
-                </section>
+            </section>
 
-                <!-- LISTS -->
-                <section>
-                    <h4>Bulletted List</h4>
+            <!-- LISTS -->
+            <section id="bulletList">
+                <h3>Bulletted List</h3>
 
-                    <ul>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
-                    </ul>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
 
-                    <h4>CSS Selector:</h4>
-                    <p>ul, li</p>
+                <h4>CSS Selector:</h4>
+                <p>ul, li</p>
 
-                    <h4>Sample Code:</h4>
-                    <pre>
+                <h4>Sample Code:</h4>
+                <pre>
                     <code>
 &lt;ul&gt;
     &lt;li&gt;List item one&lt;/li&gt;
@@ -311,22 +283,22 @@
 &lt;/ul&gt;
                     </code>
                     </pre>
-                </section>
+            </section>
 
-                <section>
-                    <h4>Numbered List</h4>
+            <section id="numberList">
+                <h3>Numbered List</h3>
 
-                    <ol>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
-                    </ol>
+                <ol>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ol>
 
-                    <h4>CSS Selector:</h4>
-                    <p>ol, li</p>
+                <h4>CSS Selector:</h4>
+                <p>ol, li</p>
 
-                    <h4>Sample Code:</h4>
-                    <pre>
+                <h4>Sample Code:</h4>
+                <pre>
                     <code>
 &lt;ol&gt;
     &lt;li&gt;List item one&lt;/li&gt;
@@ -335,70 +307,70 @@
 &lt;/ol&gt;
                     </code>
                     </pre>
-                </section>
+            </section>
+
+        </section>
+
+
+        <section id="intComp" class="main">
+            <h2>Interactive Components</h2>
+
+            <section id="txtLink">
+                <h3>In-text link</h3>
+
+                <p><em>Rendered Element:</em></p>
+                <a href="#" class="in-text-link">An in-text link</a>
+
+                <h4>CSS Selectors:</h4>
+                <p>in-text-link</p>
+
+                <h4>Sample Code:</h4>
+                <p><code>&lt;a href="#" class="in-text-link"&gt; An in-text link &lt;/a&gt;</code></p>
 
             </section>
 
+            <section id="navButton">
+                <h3>Navigation Button Style</h3>
 
-            <section id="intComp">
-                <h3>Interactive Components</h3>
+                <p><em>Rendered Element:</em></p>
+                <button class="nav-button">CALL TO ACTION</button>
 
-                <section>
-                    <h4>In-text link</h4>
+                <h4>CSS Selectors:</h4>
+                <p>nav-button</p>
 
-                    <p><em>Rendered Element:</em></p>
-                    <a href="#" class="in-text-link">An in-text link</a>
-
-                    <h4>CSS Selectors:</h4>
-                    <p>in-text-link</p>
-
-                    <h4>Sample Code:</h4>
-                    <p><code>&lt;a href="#" class="in-text-link"&gt; An in-text link &lt;/a&gt;</code></p>
-
-                </section>
-
-                <section>
-                    <h4>Navigation Button Style</h4>
-
-                    <p><em>Rendered Element:</em></p>
-                    <button class="nav-button">CALL TO ACTION</button>
-
-                    <h4>CSS Selectors:</h4>
-                    <p>nav-button</p>
-
-                    <h4>Sample Code:</h4>
-                    <p><code>&lt;button class="nav-button"&gt; CALL TO ACTION &lt;/button&gt;</code></p>
-                </section>
+                <h4>Sample Code:</h4>
+                <p><code>&lt;button class="nav-button"&gt; CALL TO ACTION &lt;/button&gt;</code></p>
+            </section>
 
 
-                <section>
-                    <h4>Form Button Style</h4>
+            <section id="formButton">
+                <h3>Form Button Style</h3>
 
-                    <p><em>Rendered Element:</em></p>
-                    <button class="form-button">Submit</button>
+                <p><em>Rendered Element:</em></p>
+                <button class="form-button">Submit</button>
 
-                    <h4>CSS Selectors:</h4>
-                    <p>form-button</p>
+                <h4>CSS Selectors:</h4>
+                <p>form-button</p>
 
-                    <h4>Sample Code:</h4>
-                    <p><code>&lt;button class="form-button"&gt; Submit &lt;/button&gt;</code></p>
+                <h4>Sample Code:</h4>
+                <p><code>&lt;button class="form-button"&gt; Submit &lt;/button&gt;</code></p>
 
-                </section>
+            </section>
 
-                <section>
-                    <h4>Text Input Field</h4>
+            <section id="txtInput">
+                <h3>Text Input Field</h3>
 
-                    <form>
-                        <label for="text">Text Input</label>
-                        <input type="text" id="form-name" class="form-input">
-                    </form>
+                <form>
+                    <label for="text">Text Input</label>
+                    <input type="text" id="form-name" class="form-input">
+                </form>
 
 
-                    <h4>CSS Selectors:</h4>
-                    <p>.form-input</p>
+                <h4>CSS Selectors:</h4>
+                <p>.form-input</p>
 
-                    <h4>Sample Code:</h4>
-                    <pre>
+                <h4>Sample Code:</h4>
+                <pre>
                     <code>
 &lt;form&gt; 
     &lt;label for="text"&gt; Text Input &lt;/label&gt;
@@ -406,36 +378,36 @@
 &lt;/form&gt;   
                     </code>
                     </pre>
-                </section>
-
             </section>
 
+        </section>
 
-            <section id="combinedComp">
-                <h3>Combined Components</h3>
 
-                <section>
-                    <h4>Main Navigation Bar</h4>
-                    <p><em>Sample:</em></p>
+        <section id="combinedComp" class="main">
+            <h2>Combined Components</h2>
 
-                    <nav class="nav-main box">
-                        <a href="#ingred" class="nav-main-item box-item-nav">All Ingredients</a>
+            <section id="mainNav">
+                <h3>Main Navigation Bar</h3>
+                <p><em>Sample:</em></p>
 
-                        <a href="#process" class="nav-main-item bg1 box-item-nav">How It Works</a>
+                <nav class="nav-main box">
+                    <a href="#ingred" class="nav-main-item box-item-nav">All Ingredients</a>
 
-                        <a href="#blog" class="nav-main-item bg1 box-item-nav">Blog</a>
+                    <a href="#process" class="nav-main-item bg1 box-item-nav">How It Works</a>
 
-                        <a href="#about" class="nav-main-item bg1 box-item-nav">About Us</a>
+                    <a href="#blog" class="nav-main-item bg1 box-item-nav">Blog</a>
 
-                        <a href="#contact" class="nav-main-item bg1 box-item-nav">Contact</a>
-                    </nav>
+                    <a href="#about" class="nav-main-item bg1 box-item-nav">About Us</a>
 
-                    <h4>CSS Selectors:</h4>
-                    <p>.box, .box-item-nav, .nav-main, .nav-main-item, .bg1</p>
+                    <a href="#contact" class="nav-main-item bg1 box-item-nav">Contact</a>
+                </nav>
 
-                    <h4>Sample Code:</h4>
+                <h4>CSS Selectors:</h4>
+                <p>.box, .box-item-nav, .nav-main, .nav-main-item, .bg1</p>
 
-                    <pre>
+                <h4>Sample Code:</h4>
+
+                <pre>
                     <code>
 &lt;nav class="nav-main box"&gt; 
     &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;All Ingredients&lt;/a&gt;
@@ -447,22 +419,22 @@
                     </code>
                     </pre>
 
-                </section>
+            </section>
 
-                <section>
-                    <h4>Grid Structure</h4>
-                    <p><em>Sample:</em></p>
-                    <div class="grid-container">
-                        <div class="grid-item">Column 1</div>
-                        <div class="grid-item">Column 2</div>
-                        <div class="grid-item">Column 3</div>
-                    </div>
+            <section id="grid">
+                <h3>Grid Structure</h3>
+                <p><em>Sample:</em></p>
+                <div class="grid-container">
+                    <div class="grid-item">Column 1</div>
+                    <div class="grid-item">Column 2</div>
+                    <div class="grid-item">Column 3</div>
+                </div>
 
-                    <h4>CSS Selectors:</h4>
-                    <p>.photo-card</p>
+                <h4>CSS Selectors:</h4>
+                <p>.photo-card</p>
 
-                    <h4>Sample Code:</h4>
-                    <pre>
+                <h4>Sample Code:</h4>
+                <pre>
                     <code>
 &lt;div class="grid-container"&gt; 
     &lt;div class="grid-item"&gt;Column 1&lt;/div&gt;
@@ -471,24 +443,24 @@
 &lt;/div&gt; 
                     </code>
                     </pre>
-                </section>
+            </section>
 
-                <section>
-                    <h4>Product Listing</h4>
-                    <div class="photo-card">
-                        <img src="img/art-direct/art-direct1.jpg" alt="art-direct">
-                        <div class="desc">
-                            <h4><b>Product Name</b></h4>
-                            <p>Description</p>
-                            <p><a href="#">View Product</a></p>
-                        </div>
+            <section id="prodList">
+                <h3>Product Listing</h3>
+                <div class="photo-card">
+                    <img src="img/art-direct/art-direct1.jpg" alt="art-direct">
+                    <div class="desc">
+                        <h4><b>Product Name</b></h4>
+                        <p>Description</p>
+                        <p><a href="#">View Product</a></p>
                     </div>
+                </div>
 
-                    <h4>CSS Selectors:</h4>
-                    <p>.photo-card</p>
+                <h4>CSS Selectors:</h4>
+                <p>.photo-card</p>
 
-                    <h4>Sample Code:</h4>
-                    <pre>
+                <h4>Sample Code:</h4>
+                <pre>
                     <code>
 &lt;div class="photo-card"&gt; 
     &lt;img src="img/img.jpg" alt="img"&gt;
@@ -500,12 +472,9 @@
 &lt;/div&gt; 
                     </code>
                     </pre>
-                </section>
-
             </section>
 
         </section>
-
 
     </body>
 </html>
