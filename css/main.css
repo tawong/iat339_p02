@@ -9,8 +9,8 @@ STYLE GUIDE STYLING
 body {
     font-family: "Lato", sans-serif;
     font-weight: 200;
-    margin: 0;
-    padding: 2rem;
+    max-width: 80%;
+    margin: auto;
 }
 
 p {
@@ -76,7 +76,6 @@ pre code {
 }
 
 
-
 /* 
 
 CARD STYLING 
@@ -126,14 +125,15 @@ CARD STYLING
 }
 
 /* Photo Card */
+
 .photo-card{
-    margin-right: 8px;
-    display: inline-block;
-    width: 15%;
+    box-sizing: border-box;
+    flex: 0 1 23%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin-bottom: 16px;
-    padding: 8px;
+    padding: 12px;
+    text-align: left;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -142,8 +142,26 @@ CARD STYLING
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+#choose-base .photo-card:hover {
+    transform: translateY(0px);
+}
+
+#choose-base .photo-card.selected {
+    transform: translateY(-8px);
+    background-color: rgba(191, 192, 49, 0.63);
+}
+
+#choose-mix .photo-card.selected {
+    transform: translateY(-8px);
+    background-color: rgba(191, 192, 49, 0.63);
+}
+
 .photo-card img{
     width: 100%;
+}
+
+.photo-card p{
+    padding: 0;
 }
 
 /* Device Card */
@@ -208,6 +226,7 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .nav-button:hover {
@@ -245,9 +264,9 @@ a:hover {
     transition: 0.5s;
 }
 
-.form-input[type=text]{
+.form-input{
     color: #1a1a1a;
-    width: 20%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: block;
@@ -259,7 +278,7 @@ a:hover {
 }
 
 .form-input[type=text]:focus {
-    width: 30%;
+    width: 100%;
 }
 
 /* 
@@ -268,13 +287,18 @@ COMBINED ELEMENTS
 
 */
 
+
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80%;
 }
 
-.col1-3 {
+.grid-container-static {
+    display: flex;
+}
+
+#grid .col1-3 {
     background-color: rgba(255, 255, 255, 0.8);
     flex: 1 1 33.3%;
     font-size: 1em;
@@ -282,7 +306,7 @@ COMBINED ELEMENTS
     padding: 15px;
 }
 
-.col2-3 {
+#grid .col2-3 {
     background-color: rgba(0, 0, 0, 0.2);
     flex: 1 1 66.6%;
     font-size: 1em;
@@ -291,8 +315,30 @@ COMBINED ELEMENTS
 }
 
 
-.col-full {
+#grid .col-full {
     background-color: rgba(0, 0, 0, 0.5);
+    flex: 1 1 100%;
+    font-size: 1em;
+    text-align: center;
+    padding: 15px;
+}
+
+.col1-3 {
+    flex: 1 1 33.3%;
+    font-size: 1em;
+    text-align: left;
+    padding: 15px;
+}
+
+.col2-3 {
+    flex: 1 1 66.6%;
+    font-size: 1em;
+    text-align: left;
+    padding: 15px;
+}
+
+
+.col-full {
     flex: 1 1 100%;
     font-size: 1em;
     text-align: center;
@@ -302,6 +348,127 @@ COMBINED ELEMENTS
 
 .bg1 {
     background-color: #979797;
+}
+
+/*
+
+ORDERING ELEMENTS
+
+*/
+
+#order-main h1{
+    font-size: 3em;
+}
+
+#order-create, #order-browse{
+    position: relative;
+    height: 250px;
+    transition: all 0.4s;
+}
+
+#order-create{
+    background-color: #7AD7DF;
+}
+
+#order-create:hover{
+    background-color: #66b2b9;
+}
+
+#order-browse{
+    background-color: #FFA41F;
+}
+
+#order-browse:hover{
+    background-color: #ea9820;
+}
+
+.order-cta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: black;
+}
+
+#community-gallery, #choose-base, #choose-mix{
+    justify-content: space-between;
+}
+
+.modal-display{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.community-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    display: none;
+}
+
+.recipe-img, .recipe-text{
+    display: inline-block;
+    min-width: 500px;
+    float: left;
+}
+
+.recipe-img{
+    width: 100%;
+}
+
+.recipe-img img{
+    width: 100%;
+    height: 270px;
+}
+
+.recipe-text{
+    padding: 15px;
+}
+
+.recipe-text .title{
+    margin: 0px;
+}
+
+.recipe-text p{
+    padding-left: 0px;
+    margin-top: 0;
+}
+
+.recipe-text h3{
+    margin-bottom: 0.2em;
+}
+
+#choose-base .placeholder{
+    max-height: 180px;
+}
+
+.photo-card.selected .base-select{
+    background-color: #BFC031;
+    color: white;
+    border: white;
+}
+
+.confirm-img{
+    max-height: 250px;
+}
+
+#confirm-order p{
+    padding: 0;
+}
+
+#billing-form form{
+    width: 100%;
+    text-align: left;
 }
 
 /* 
@@ -367,6 +534,19 @@ MAIN NAV ELEMENTS
     .nav-col-group {
         float: none;
     }
+    
+    .community-modal, .recipe-text, .recipe-img{
+        width: 100%;
+        min-width: 0;
+    }
+    
+    .grid-container-static{
+        flex-wrap: wrap;
+    }
+    
+    .grid-container-static, .col1-2, .col-13{
+        width: 100%;
+    }
 }
 
 
@@ -413,7 +593,19 @@ SIDE NAV ELEMENTS: Style guide
     padding: 0px 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
+    body{
+        max-width: 100%;
+    }
     
+    .photo-card{
+        flex: 0 1 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .photo-card{
+        flex: 0 1 48%;
+    }
 }
 

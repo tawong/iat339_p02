@@ -1,4 +1,26 @@
 $(document).ready(function(){
+    
+    //Open Unicorn Modal
+    $("#open-modal").click(function(){
+        $(".modal-display").fadeIn();
+        $("#unicorn").fadeIn();
+    });
+    
+    $(".modal-display").click(function(){
+        $(".modal-display").fadeOut();
+        $("#unicorn").fadeOut();
+    });
+    
+    $(".base-select").click(function(){
+        $(this).parent().parent().toggleClass("selected");
+        $(this).parent().parent().siblings().removeClass("selected");
+    });
+    
+    $(".mix-select").click(function(){
+        $(this).parent().parent().toggleClass("selected");
+    });
+    
+    
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

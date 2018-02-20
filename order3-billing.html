@@ -29,6 +29,10 @@ Main nav bar order:
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flexbox.css">  
+        
+        <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
         <!-- CUSTOM SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,7 +42,71 @@ Main nav bar order:
 
     <body>
 
+        <nav class="nav-container">
+            <div class="nav-col-logo">
+                <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
+            </div>
 
+            <div class="nav-col-group">
+                <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+            </div>
+        </nav>
+        
+        <div class="grid-container">
+            <div class="col-full">
+                <h1>Billing Information</h1>
+            </div>
+        </div>
+        <div class="grid-container-static" id="billing-form">
+            <div class="col1-3">
+                <form>
+                    <label>Name:</label>
+                    <input type="text" class="form-input">
+                    <label>Address:</label>
+                    <input type="text" class="form-input">
+                    <label>City:</label>
+                    <input type="text" class="form-input">
+                    <label>Province:</label>
+                    <select class="form-input">
+                        <option>Alberta</option>
+                        <option>British Columbia</option>
+                        <option>Manitoba</option>
+                        <option>New Brunswick</option>
+                        <option>Newfoundland &amp; Labrador</option>
+                        <option>Northwest Territories</option>
+                        <option>Nova Scotia</option>
+                        <option>Nunavut</option>
+                        <option>Ontario</option>
+                        <option>Prince Edward Island</option>
+                        <option>Quebec</option>
+                        <option>Saskatchewan</option>
+                        <option>Yukon Territory</option>
+                    </select>
+                    <label>Postal Code:</label>
+                    <input type="text" class="form-input">
+                </form>
+            </div>
+            <div class="col2-3">
+                <form>
+                    <label>Credit Card:</label>
+                    <input type="text" class="form-input">
+                    <label>CCV:</label>
+                    <input type="text" class="form-input">
+                    <label>Expiry:</label>
+                    <input type="text" class="form-input">
+                </form>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <div class="col-full">
+                <a href="order4-success.html"><button class="nav-button">Submit</button></a>
+            </div>
+        </div>
 
     </body>
 
