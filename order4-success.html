@@ -8,7 +8,7 @@ ORDER - CONFIRM ORDER - COMPONENTS
 - success message: Sweet! Your order has been placed. 
 - Options: 
     (1) Print receipt
-    (2) Browse more creations --> links to blog
+    (2) Browse more creations links to blog
 
 -----
 
@@ -28,6 +28,10 @@ Main nav bar order:
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flexbox.css">  
+        
+        <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
         <!-- CUSTOM SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,7 +41,27 @@ Main nav bar order:
 
     <body>
 
+        <nav class="nav-container">
+            <div class="nav-col-logo">
+                <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
+            </div>
 
+            <div class="nav-col-group">
+                <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+            </div>
+        </nav>
+        
+        <div class="grid-container">
+            <div class="col-full">
+                <h1>Order Complete!</h1>
+                <p>Thank you for your purchase.</p>
+                <a href="index.html"><button class="nav-button">Return Home</button></a>
+            </div>
+        </div>
 
     </body>
 
