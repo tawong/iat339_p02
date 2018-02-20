@@ -3,6 +3,8 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>P02 Deliverable: Style Guide</title>
 
         <!-- STYLING: Grids, Interactions, Visuals -->
@@ -10,11 +12,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flexbox.css">
 
-
         <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-        
+
         <!-- CUSTOM SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
@@ -47,7 +48,7 @@
             <a href="#navButton">Navigation Button</a>
             <a href="#formButton">Form Button</a>
             <a href="#txtInput">Text Input Field</a>
-            
+
             <a href="#combinedComp">Combined Components</a>
             <a href="#mainNav">Main Nav Bar</a>
             <a href="#grid">Grid Structure</a>
@@ -57,9 +58,9 @@
 
         <!-- BRAND STYLE: Art direction, visuals, colours -->
         <section id="brandStyle" class="main">
-                        
+
             <h2>Deliverables</h2>
-            
+
             <h4>P02: Phase 1</h4>
             <ul>
                 <li><a href="img/Sitemap-WhiteBG.png" target="_blank">Sitemap</a></li>
@@ -73,7 +74,7 @@
                 <li><a href="https://invis.io/N3FJTRUP4J8">Smartphone (iOS)</a></li>
                 <li><a href="https://invis.io/2VFK3SXHKRN">Gaming Console (Xbox One)</a></li>
             </ul>
-            
+
             <h4>Citations</h4>
             <ul>
                 <li><a href="citations.html">View Citations</a></li>
@@ -407,31 +408,47 @@
                 <h3>Main Navigation Bar</h3>
                 <p><em>Sample:</em></p>
 
-                <nav class="nav-main box">
-                    <a href="#ingred" class="nav-main-item box-item-nav">All Ingredients</a>
+                <nav class="nav-container">
+                    <div class="nav-col-logo">
+                        <a href="home.html" class="logotype nav-logo">Cookie Craft</a>
+                    </div>
 
-                    <a href="#process" class="nav-main-item bg1 box-item-nav">How It Works</a>
-
-                    <a href="#blog" class="nav-main-item bg1 box-item-nav">Blog</a>
-
-                    <a href="#about" class="nav-main-item bg1 box-item-nav">About Us</a>
-
-                    <a href="#contact" class="nav-main-item bg1 box-item-nav">Contact</a>
+                    <div class="nav-col-group">
+                        <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                        <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                        <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                        <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                        <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+                    </div>
                 </nav>
 
                 <h4>CSS Selectors:</h4>
-                <p>.box, .box-item-nav, .nav-main, .nav-main-item, .bg1</p>
+                <ul>
+                    <li>.nav-container</li>
+                    <li>.nav-col-logo</li> 
+                    <li>.nav-col-group</li>
+                    <li>.nav-col-group</li>
+                    <li>.nav-logo</li>
+                    <li>.logotype</li>
+                    <li>.nav-item</li>
+                    <li>.box-item-nav</li>
+                </ul>
 
                 <h4>Sample Code:</h4>
 
                 <pre>
                     <code>
-&lt;nav class="nav-main box"&gt; 
-    &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;All Ingredients&lt;/a&gt;
-    &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;How It Works&lt;/a&gt;
-    &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;Blogs&lt;/a&gt;
-    &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;About Us&lt;/a&gt;
-    &lt;a href="ingred class="nav-main-item bg1 box-item-nav"&gt;Contacts&lt;/a&gt;
+&lt;nav class="nav-container"&gt; 
+
+    &lt;div class="nav-col-logo"&gt; 
+        &lt;a href="home.html" class="logotype nav-logo"&gt;Cookie Craft &lt;/a&gt; 
+    &lt;/div&gt; 
+
+    &lt;a href="contact.html" class="nav-item box-item-nav"&gt;Contact&lt;/a&gt;
+    &lt;a href="about.html" class="nav-item box-item-nav"&gt;About Us&lt;/a&gt;
+    &lt;a href="order0-main.html" class="nav-item box-item-nav"&gt;Order&lt;/a&gt;
+    &lt;a href="blog.html" class="nav-item box-item-nav"&gt;Blog&lt;/a&gt;
+    &lt;a href="ingredients.html" class="nav-item box-item-nav"&gt;Ingredients&lt;/a&gt;
 &lt;/div&gt; 
                     </code>
                     </pre>
@@ -446,12 +463,12 @@
                     <div class="col1-3">Column 2</div>
                     <div class="col1-3">Column 3</div>
                 </div>
-                
+
                 <div class="grid-container">
                     <div class="col2-3">Column 1</div>
                     <div class="col1-3">Column 2</div>
                 </div>
-                
+
                 <div class="grid-container">
                     <div class="col-full">Column 1</div>
                 </div>
@@ -475,8 +492,9 @@
 
 &lt;div class="grid-container"&gt; 
     &lt;div class="col-full"&gt;Column 1&lt;/div&gt;
-&lt;/div&gt;      </code>
-                    </pre>
+&lt;/div&gt;      
+                    </code>
+                </pre>
             </section>
 
             <section id="prodList">
@@ -505,7 +523,7 @@
     &lt;/div&gt;
 &lt;/div&gt; 
                     </code>
-                    </pre>
+                </pre>
             </section>
 
         </section>
