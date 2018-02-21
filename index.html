@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- 
+
+HOME PAGE COMPONENTS
+
+Above the fold: 
+- "Welcome" message
+- Cookie feature: Name + Photo of cookie
+- Ingredients from cookie feature scroll across page
+- CTA Button: Get Started
+
+Below the fold: 
+- How it works: 4 steps (name + icon)
+
+Main nav bar order: 
+1) Ingredients
+2) Blog
+3) Place an Order (order0-main.html)
+4) About Us
+5) Contact
+
+-->
+
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,27 +45,6 @@
 
     <body>
 
-        <!-- 
-
-HOME PAGE COMPONENTS
-
-Above the fold: 
-- "Welcome" message
-- Cookie feature: Name + Photo of cookie
-- Ingredients from cookie feature scroll across page
-- CTA Button: Get Started
-
-Below the fold: 
-- How it works: 4 steps (name + icon)
-
-Main nav bar order: 
-1) Ingredients
-2) Blog
-3) Place an Order (order0-main.html)
-4) About Us
-5) Contact
-
--->
         <!-- Navigation bar -->
         <nav class="nav-container">
             <div class="nav-col-logo">
@@ -58,7 +59,23 @@ Main nav bar order:
                 <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
             </div>
         </nav>
-        
+
+        <div id="home-main" class="grid-container">
+
+            <div class="col-full">
+                <h1>Pick it. Mix it. Bake it!</h1>
+                <p>Create your own dough, or choose from one of our favourites! We'll never say no to a flavour combination.</p>
+                <a href="ingredients.html"><button class="nav-button">Discover Ingredients</button></a>
+            </div>
+
+            <div class="col-full home-img">
+                <div class="home-img">
+                    <img src="img/cookies-styled2.jpg" alt="Chocolate chip cookie on blue background">
+                </div>
+            </div>
+
+        </div>
+
 
     </body>
 
