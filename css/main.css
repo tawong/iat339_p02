@@ -15,7 +15,6 @@ body {
 
 p {
     line-height: 1.8;
-    padding-left: 1em;
 }
 
 section:not([id]) {
@@ -31,6 +30,9 @@ section {
 
 h1 {
     font-family: "Lato", sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    letter-spacing: 0.1rem; 
 }
 
 h2 {
@@ -47,6 +49,10 @@ h4 {
     color: #8a919b;
     font-weight: 400;
     text-transform: uppercase;
+} 
+
+ul li {
+    line-height: 2em;
 }
 
 section p {
@@ -163,6 +169,7 @@ CARD STYLING
 .photo-card p{
     padding: 0;
 }
+
 
 /* Device Card */
 .device-card{
@@ -314,7 +321,6 @@ COMBINED ELEMENTS
     padding: 15px;
 }
 
-
 #grid .col-full {
     background-color: rgba(0, 0, 0, 0.5);
     flex: 1 1 100%;
@@ -356,9 +362,6 @@ ORDERING ELEMENTS
 
 */
 
-#order-main h1{
-    font-size: 3em;
-}
 
 #order-create, #order-browse{
     position: relative;
@@ -483,6 +486,7 @@ MAIN NAV ELEMENTS
     flex-wrap: wrap;
     max-width: 100%;
     background-color: none;
+    box-shadow: 0 4px 6px -6px gray;
 }
 
 .nav-col-logo {
@@ -496,7 +500,8 @@ MAIN NAV ELEMENTS
     background-color: none;
     flex: 1 1 66.6%;
     text-align: center;
-    padding: 2px;
+    padding-top: .5em;
+    padding-bottom: .1em;
 }
 
 .nav-item {
@@ -504,6 +509,7 @@ MAIN NAV ELEMENTS
     display: inline-block;
     color: #404040;
     font-size: 1em;
+    font-weight: 100;
     letter-spacing: 0.1rem;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -526,25 +532,33 @@ MAIN NAV ELEMENTS
         display: block;
         text-align: center;
     }
-    
+
     .nav-col-logo {
         float: none;
     }
-    
+
     .nav-col-group {
         float: none;
     }
-    
+
+    .nav-item {
+        float: left;
+    }
+
     .community-modal, .recipe-text, .recipe-img{
         width: 100%;
         min-width: 0;
     }
-    
+
+    .grid-container .col-full {
+        width: 100%;
+    }
+
     .grid-container-static{
         flex-wrap: wrap;
     }
-    
-    .grid-container-static, .col1-2, .col-13{
+
+    .grid-container-static, .col1-2, .col1-3{
         width: 100%;
     }
 }
@@ -586,6 +600,7 @@ SIDE NAV ELEMENTS: Style guide
     line-height: 0.2;
     font-size:20px;
     text-align: left;
+    padding-left: 1em;
 }
 
 .main {
@@ -597,7 +612,7 @@ SIDE NAV ELEMENTS: Style guide
     body{
         max-width: 100%;
     }
-    
+
     .photo-card{
         flex: 0 1 30%;
     }
@@ -608,4 +623,123 @@ SIDE NAV ELEMENTS: Style guide
         flex: 0 1 48%;
     }
 }
+
+
+/*
+
+HOME ELEMENTS
+
+*/
+
+
+#home-main p{
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#home-feature img{
+    max-width: 100%;
+    height: auto;   
+}
+
+
+.home-img img{
+    width: 100%;
+}
+
+/*
+
+ABOUT PAGE ELEMENTS
+
+*/
+
+#about h1{
+    font-size: 3em;
+    font-weight: 200;
+    letter-spacing: 0.1rem; 
+}
+
+#about-sub p {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#about-img img{
+    width: 100%;
+    padding-top: 1em;
+}
+
+/*
+
+CONTACT PAGE ELEMENTS
+
+*/
+
+#contact-sub p {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#contact-img img{
+    width: 100%;
+    padding-top: 1em;
+}
+
+/*
+
+INGREDIENTS PAGE ELEMENTS
+
+*/
+
+#ingred-sub p {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#ingred-single h2 {
+    text-align: left;
+}
+
+#ingred-single img {
+    padding-top: 2em;
+}
+
+/*
+
+BLOG ELEMENTS
+
+*/
+
+#blog-sub p {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#blog-single h2 {
+    text-align: left;
+}
+
+#blog-single img {
+    padding-top: 2em;
+}
+
+#choose-blog .photo-card:hover {
+    transform: translateY(0px);
+}
+
+#choose-blog {
+    justify-content: space-between;
+}
+
+.blog-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
