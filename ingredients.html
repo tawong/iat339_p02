@@ -7,8 +7,8 @@ INGREDIENTS PAGE COMPONENTS
 
 - Sorting options: Alphabetically, price, newest ingredients
 - Grid of ingredient cards: 
-    On Hover: "show details" button appears
-    
+On Hover: "show details" button appears
+
 - Ingredient cards: Photo, name, price
 
 Main nav bar order: 
@@ -27,6 +27,10 @@ Main nav bar order:
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flexbox.css">  
 
+        <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
         <!-- CUSTOM SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
@@ -35,8 +39,136 @@ Main nav bar order:
 
     <body>
 
+        <!-- Navigation bar -->
+        <nav class="nav-container">
+            <div class="nav-col-logo">
+                <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
+            </div>
 
+            <div class="nav-col-group">
+                <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+            </div>
+        </nav>
 
+        <div class="grid-container">
+            <div id="ingred-sub" class="col-full">
+                <h1>The Ingredients</h1>
+                <p>Browse our selection of hand-picked ingredients. <em>(Yes, they're local!)</em></p>
+            </div>
+
+            <div class="col-full">
+                <section id="base">
+                    <h2>The Base:</h2>
+                    <div id="choose-base" class="grid-container">
+                        <div class="photo-card">
+                           <a href="ingredients-single-base.html"><img src="img/ingred/basic-cookie-dough.jpg" alt="img"></a> 
+                            <div class="desc">
+                                <h4><b>Basic Chocolate Chip</b></h4>
+                                <p>You can't go wrong with this instant classic!</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-base.html"><img src="img/ingred/oatmeal-cookie-dough.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Oatmeal</b></h4>
+                                <p>Hearty and healthy, and complete with raisins!</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-base.html"><img src="img/ingred/chocolate-cookie-dough.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Sugar Cookie</b></h4>
+                                <p>Everyone's buttery favourite!</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-base.html"><img src="img/ingred/sugar-cookie-dough.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Chocolate Fudge</b></h4>
+                                <p>Double chocolate, fudgy goodness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mix">
+                    <h2>The Mix:</h2>
+                    <div id="choose-base" class="grid-container">
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/almonds.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Almonds</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/blueberries.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Blueberries</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/choco-chips.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Chocolate Chips</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/cinnamon.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Cinnamon</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/pistachio.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Pistachio</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/pretzels.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Pretzels</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/rolled-oats.jpg" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Rolled Oats</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="photo-card">
+                            <a href="ingredients-single-mix.html"><img src="img/ingred/sprinkles.JPG" alt="img"></a>
+                            <div class="desc">
+                                <h4><b>Sprinkles</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
     </body>
 
 </html>

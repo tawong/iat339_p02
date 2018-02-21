@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 
+
+SINGLE INGREDIENT PAGE COMPONENTS
+
+- Name of ingredient
+- Brief description
+- Detailed photo of ingredient
+- Section: "This ingredients also goes well with...", 3 similar ingredients
+- CTA Button: Add to order (1) pop-up module appears and asks which cookie order to add to, (2) select cookie, (3) confirm ok, (4) success
+
+
+-----
+
+Main nav bar order: 
+1) Ingredients
+2) Discover Creations (blog)
+3) Build A Cookie (order form)
+4) About Us
+5) Contact
+
+
+-->
+    <head> 
+        <meta charset="utf-8">
+        <title>P02: Cookie Craft - Home Page</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexbox.css">  
+
+        <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+        <!-- CUSTOM SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Navigation bar -->
+        <nav class="nav-container">
+            <div class="nav-col-logo">
+                <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
+            </div>
+
+            <div class="nav-col-group">
+                <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+            </div>
+        </nav>
+
+        <div id="ingred-single" class="grid-container-static">
+            <div class="col2-3">
+                <h2>Pistachios</h2>
+
+                <section>
+                    <h4>About this mix-in</h4>
+
+                    <p>Cupcake ipsum dolor sit amet jelly cotton candy topping pastry. Toffee marshmallow icing carrot cake chocolate. Sesame snaps powder bear claw wafer sugar plum gummies. Wafer marshmallow carrot cake tart. Cookie carrot cake croissant. Chocolate bar caramels pastry jujubes candy canes.</p>
+                </section>
+
+                <section>
+                    <h4>Quick Facts</h4>
+
+                    <p>Soufflé caramels carrot cake bear claw pudding. Pastry lollipop chupa chups ice cream jelly-o jelly-o cotton candy biscuit icing.</p>
+
+                    <ul>
+                        <li>Candy cupcake donut caramels gummi bears pastry.</li>
+                        <li>Candy cupcake donut caramels gummi bears pastry.</li>
+                        <li>Candy cupcake donut caramels gummi bears pastry.</li>
+                    </ul>
+                </section>
+                
+                <!-- Return to All Ingredients button -->
+                <a href="ingredients.html"><button class="nav-button btn">Return to All Ingredients</button></a>
+
+            </div>
+
+            <div class="col1-3">
+                <img src="img/ingred/pistachio-full.jpg" alt="img">
+            </div>
+        </div>
+
+    </body>
+
+</html>
