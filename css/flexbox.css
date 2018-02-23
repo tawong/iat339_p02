@@ -1,24 +1,22 @@
+/*
 .box {
-	display: -webkit-flex; /* For support in a series of Webkit browsers */
-	display: -ms-flex; /* For support in IE 10 */
+	display: -webkit-flex; 
+	display: -ms-flex;
 	display: flex;
 
-	/*
-		Wrap child elements that become too wide for their current row
-	*/
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 
-	/*
-		"space-around" specifies that we want the extra space to be balanced around the elements
-	*/
 	-webkit-justify-content: space-around;
 	-ms-justify-content: space-around;
 	justify-content: space-around;
 
 }
 
+*/
+
+/*
 .box-item-nav {
 	-webkit-flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
@@ -32,5 +30,7 @@
         text-align: left;
     }
 }
+
+*/
 
 
