@@ -1,163 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
+    <head>
+        <meta charset="utf-8">
+        <title>P02: Cookie Craft - Home Page</title>
 
-ORDER - CHOOSE INGREDIENTS (1) - BROWSE FAVOURITES - COMPONENTS
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexbox.css">
 
-- list of top 5 cookie recipes cards
-- cookie recipe cards: title, short description, cookie dough base, unique ingredients
+        <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
+        <!-- CUSTOM SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 
------
+    </head>
 
-Main nav bar order: 
-1) Ingredients
-2) Discover Creations (blog)
-3) Build A Cookie (order form)
-4) About Us
-5) Contact
+    <body>
 
+        <nav class="nav-container">
+            <div class="nav-col-logo">
+                <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
+            </div>
 
--->
+            <div class="nav-col-group">
+                <a href="contact.html" class="nav-item box-item-nav">Contact</a>
+                <a href="about.html" class="nav-item box-item-nav">About Us</a>
+                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="blog.html" class="nav-item box-item-nav">Blog</a>
+                <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
+            </div>
+        </nav>
 
-<head>
-    <meta charset="utf-8">
-    <title>P02: Cookie Craft - Home Page</title>
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/flexbox.css">
-
-    <!-- TYPOGRAPHY: Google Fonts, Fredoka One + Quicksand -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-
-    <!-- CUSTOM SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-
-</head>
-
-<body>
-
-    <nav class="nav-container">
-        <div class="nav-col-logo">
-            <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
-        </div>
-
-        <div class="nav-col-group">
-            <a href="contact.html" class="nav-item box-item-nav">Contact</a>
-            <a href="about.html" class="nav-item box-item-nav">About Us</a>
-            <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
-            <a href="blog.html" class="nav-item box-item-nav">Blog</a>
-            <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
-        </div>
-    </nav>
-
-    <div id="choose-community" class="grid-container">
-        <div class="col-full">
-            <h1>Community Creations</h1>
-        </div>
-        <div class="col-full">
-            <div id="community-gallery" class="grid-container">
-                <div class="photo-card">
-                    <img src="img/unicorn-swirl.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Unicorn Swirl</b></h4>
-                        <p>A magical cookie for kids and adults! Don't eat them all at once.</p>
-                        <p><a id="open-modal" href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+        <div id="choose-community" class="grid-container">
+            <div class="col-full">
+                <h1>Community Creations</h1>
+            </div>
+            <div class="col-full">
+                <div id="community-gallery" class="grid-container">
+                    <div class="photo-card">
+                        <img src="img/creations/unicorn-swirl.jpg" alt="img">
+                        <div class="desc">
+                            <h4><b>Unicorn Swirl</b></h4>
+                            <p>A deliciously magical cookie for kids and adults alike! Don't eat them all at once.</p>
+                            <p><a id="open-modal" href="#">View Recipe</a></p>
+                            <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="img/creations/black-forest.png" alt="img">
+                        <div class="desc">
+                            <h4><b>Black Forest</b></h4>
+                            <p>Who doesn't love munching on dried fruit and chocolate? This cookie is the perfect blend of both!</p>
+                            <p><a href="#">View Recipe</a></p>
+                            <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="img/creations/almond-cookies.jpg" alt="img">
+                        <div class="desc">
+                            <h4><b>Almond Cherry Drops</b></h4>
+                            <p>Pretty as a present, these cookies are a favourite at picnics and potlucks.</p>
+                            <p><a href="#">View Recipe</a></p>
+                            <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="img/creations/tiramisu.jpg" alt="img">
+                        <div class="desc">
+                            <h4><b>Tiramisu Delights</b></h4>
+                            <p>What do you get when you cross an Italian dessert with a cookie? Tiramisu Delights.</p>
+                            <p><a href="#">View Recipe</a></p>
+                            <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+            </div>
+
+            <div class="modal-display">        
+                <div class="community-modal" id="unicorn">
+                    <div class="recipe-img">
+                        <img src="img/creations/unicorn-swirl.jpg">
                     </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
-                    </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
-                    </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
-                    </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
-                    </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
-                    </div>
-                </div>
-                <div class="photo-card">
-                    <img src="img/placeholder.jpg" alt="img">
-                    <div class="desc">
-                        <h4><b>Product Name</b></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="#">View Recipe</a></p>
-                        <a href="order2-confirm.html"><button class="nav-button">Place Order</button></a>
+                    <div class="recipe-text">
+                        <h1 class="title">Unicorn Swirl</h1>
+                        <p class="author">Created By: Jennifer Thi</p>
+                        <h3>About</h3>
+                        <p class="description">Who says you can't have fun while baking? These cookies are perfect for any kid (or adult) party! Just add some food colouring and BAM. Pure magic.</p>
+                        <h3>Dough Base</h3>
+                        <p class="dough">Shortbread</p>
+                        <h3>Ingredients</h3>
+                        <ul class="ingredients">
+                            <li>Mango Juice</li>
+                            <li>Cotton Candy</li>
+                            <li>Blue Freezies</li>
+                            <li>Pixie Stix</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal-display"></div>
-    <div class="community-modal" id="unicorn">
-        <div class="recipe-img">
-            <img src="img/unicorn-swirl.jpg">
-        </div>
-        <div class="recipe-text">
-            <h1 class="title">Unicorn Swirl</h1>
-            <p class="author">Created By: Jennifer Thi</p>
-            <h3>About</h3>
-            <p class="description">Who says you can't have fun while baking? These cookies are perfect for any kid (or adult) party! Just add some food colouring and BAM. Pure magic.</p>
-            <h3>Dough Base</h3>
-            <p class="dough">Shortbread</p>
-            <h3>Ingredients</h3>
-            <ul class="ingredients">
-                <li>Mango Juice</li>
-                <li>Cotton Candy</li>
-                <li>Blue Freezies</li>
-                <li>Pixie Stix</li>
-            </ul>
-        </div>
-    </div>
 
-</body>
+        <!-- Footer -->
+        <nav class="footer-container">
+            <div class="footer-col-group">
+                <a href="https://github.com/tawong/iat339_p02" class="footer-item">GitHub Repository</a>           
+                <a href="styleguide.html" class="footer-item">Style Guide</a>
+                <a href="citations.html" class="footer-item">References</a>
+            </div>
+        </nav>
+
+    </body>
 
 </html>
