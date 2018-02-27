@@ -24,11 +24,15 @@
             <div class="nav-col-logo">
                 <a href="index.html" class="logotype nav-logo">Cookie Craft</a>
             </div>
+            
+            <div class="nav-col-menu">
+                <button class="nav-button">MENU</button>
+            </div>
 
             <div class="nav-col-group">
                 <a href="contact.html" class="nav-item box-item-nav">Contact</a>
                 <a href="about.html" class="nav-item box-item-nav">About Us</a>
-                <a href="order0-main.html" class="nav-item box-item-nav">Order</a>
+                <a href="order1.1-choose.html" class="nav-item box-item-nav">Order</a>
                 <a href="blog.html" class="nav-item box-item-nav">Blog</a>
                 <a href="ingredients.html" class="nav-item box-item-nav">Ingredients</a>
             </div>
@@ -42,35 +46,35 @@
                 <h2>Choose your base:</h2>
                 <div id="choose-base" class="grid-container">
                     <div class="photo-card">
-                        <img src="img/ingred/basic-cookie-dough.jpg" alt="img">
+                        <img src="img/ingred/basic-cookie-dough.jpg" alt="Chocolate cookie dough">
                         <div class="desc">
                             <h4><b>Basic Chocolate Chip</b></h4>
                             <p>You can't go wrong with this instant classic!</p>
-                            <button class="nav-button base-select">Select</button>
+                            <button data-base="Chocolate Chip" class="nav-button base-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
-                        <img src="img/ingred/oatmeal-cookie-dough.jpg" alt="img">
+                        <img src="img/ingred/oatmeal-cookie-dough.jpg" alt="Oatmeal cookie dough">
                         <div class="desc">
                             <h4><b>Oatmeal</b></h4>
                             <p>Hearty and healthy, and complete with raisins!</p>
-                            <button class="nav-button base-select">Select</button>
+                            <button data-base="Oatmeal" class="nav-button base-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
-                        <img class="placeholder" src="img/ingred/chocolate-cookie-dough.jpg" alt="img">
+                        <img class="placeholder" src="img/ingred/chocolate-cookie-dough.jpg" alt="fudge cookie dough">
                         <div class="desc">
                             <h4><b>Chocolate Fudge</b></h4>
                             <p>Double chocolate, fudgy goodness.</p>
-                            <button class="nav-button base-select">Select</button>
+                            <button data-base="Chocolate Fudge" class="nav-button base-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
-                        <img class="placeholder" src="img/ingred/sugar-cookie-dough.jpg" alt="img">
+                        <img class="placeholder" src="img/ingred/sugar-cookie-dough.jpg" alt="sugar cookie dough">
                         <div class="desc">
                             <h4><b>Sugar Cookie</b></h4>
                             <p>Everyone's buttery favourite!</p>
-                            <button class="nav-button base-select">Select</button>
+                            <button data-base="Sugar" class="nav-button base-select">Select</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +87,7 @@
                         <div class="desc">
                             <h4><b>Coconut Flakes</b></h4>
                             <p>This tropical fruit adds playful texture to any cookie.</p>
-                            <button class="nav-button mix-select">Select</button>
+                            <button data-mix="coconut-flakes" class="nav-button mix-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
@@ -91,7 +95,7 @@
                         <div class="desc">
                             <h4><b>Pretzels</b></h4>
                             <p>Perfect for adding that extra bit of crunch to the mix</p>
-                            <button class="nav-button mix-select">Select</button>
+                            <button data-mix="pretzels" class="nav-button mix-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
@@ -99,7 +103,7 @@
                         <div class="desc">
                             <h4><b>Rolled Oats</b></h4>
                             <p>Great in granola, even better in cookies</p>
-                            <button class="nav-button mix-select">Select</button>
+                            <button data-mix="oats" class="nav-button mix-select">Select</button>
                         </div>
                     </div>
                     <div class="photo-card">
@@ -107,13 +111,41 @@
                         <div class="desc">
                             <h4><b>Sprinkles</b></h4>
                             <p>A dash of colour goes a long way with these fun sprinkles</p>
-                            <button class="nav-button mix-select">Select</button>
+                            <button data-mix="sprinkles" class="nav-button mix-select">Select</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-full">
-                <a href="order2-confirm.html"><button class="nav-button">Continue</button></a>
+                <button id="goto-confirm" class="nav-button">Continue</button>
+            </div>
+        </div>
+        
+        <div id="confirm-order" class="grid-container">
+            <div class="col-full">
+                <h1>Confirm Order</h1>
+                <img class="order-splash" src="">
+            </div>
+            
+            <div class="col-full">
+            
+                <h3>Cookie Base</h3>
+                <p id="cookie-base"></p>
+                
+                <div id="mix-holder">
+                    <h3>Cookie Mix</h3>
+                    <p id="sprinkles">Sprinkles</p>
+                    <p id="coconut-flakes">Coconut Flakes</p>
+                    <p id="pretzels">Pretzels</p>
+                    <p id="oats">Rolled Oats</p>
+                </div>
+                
+                
+            </div>
+            
+            <div class="col-full">
+                <button id="goback-choose" class="nav-button">Go Back</button>
+                <a href="order3-billing.html"><button class="nav-button">Confirm &amp; Pay</button></a>
             </div>
         </div>
 

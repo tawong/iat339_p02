@@ -237,14 +237,8 @@ a:hover {
 }
 
 .nav-button:hover {
-    border: 3px solid #BFC031; /* Green */
     background-color: #BFC031; 
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
 
 .form-button {
@@ -385,6 +379,11 @@ ORDERING ELEMENTS
     background-color: #ea9820;
 }
 
+#mix-holder p{
+    margin: 0;
+    display: none;
+}
+
 .order-cta{
     position: absolute;
     top: 50%;
@@ -392,6 +391,14 @@ ORDERING ELEMENTS
     transform: translate(-50%, -50%);
     margin: 0;
     color: black;
+}
+
+.order-img{
+    height: 25px;
+}
+
+#confirm-order{
+    display: none;
 }
 
 #community-gallery, #choose-base, #choose-mix{
@@ -474,6 +481,10 @@ ORDERING ELEMENTS
     text-align: left;
 }
 
+.order-splash{
+    width: 100%;
+}
+
 /* 
 
 MAIN NAV ELEMENTS 
@@ -504,6 +515,17 @@ MAIN NAV ELEMENTS
     padding-bottom: .1em;
 }
 
+
+.nav-col-menu{
+    padding: 20px;
+    display: none;
+}
+
+.nav-col-menu button{
+    border-width: 2px;
+    padding: 5px 8px;
+}
+
 .nav-item {
     float: right;
     display: inline-block;
@@ -526,56 +548,7 @@ MAIN NAV ELEMENTS
     color: #BFC031;
 }
 
-@media screen and (max-width: 500px) {
-    .nav-container {
-        float: none;
-        display: block;
-        text-align: center;
-    }
 
-    .footer-container {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-
-    .nav-col-logo {
-        float: none;
-    }
-
-    .nav-col-group {
-        float: none;
-    }
-
-    .nav-item {
-        float: left;
-    }
-
-    .footer-col-group {
-        float: right;
-    }
-
-    .footer-item {
-        float: right;
-    }
-
-    .community-modal, .recipe-text, .recipe-img{
-        width: 100%;
-        min-width: 0;
-    }
-
-    .grid-container .col-full {
-        width: 100%;
-    }
-
-    .grid-container-static{
-        flex-wrap: wrap;
-    }
-
-    .grid-container-static, .col1-2, .col1-3{
-        width: 100%;
-    }
-}
 
 /* 
 
@@ -666,6 +639,27 @@ SIDE NAV ELEMENTS: Style guide
     padding: 0px 10px;
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1366px) {
+    body{
+        max-width: 100%;
+    }
+    
+    .grid-container{
+        max-width: 95%;
+        margin: auto;
+    }
+    
+    .grid-container-static{
+        max-width: 95%;
+        margin: auto;
+    }
+    
+
+
+}
+
 @media only screen and (max-width: 1024px) {
     body{
         max-width: 100%;
@@ -674,14 +668,149 @@ SIDE NAV ELEMENTS: Style guide
     .photo-card{
         flex: 0 1 30%;
     }
+    
+    .nav-col-group{
+        flex: 1 1 100%;
+        display: none;
+    }
+    
+    .nav-item{
+        width: 100%;
+        display: block;
+    }
+    
+    .nav-item:hover{
+        background: #BFC031;
+        color: #fff;
+    }
+    
+    .nav-col-menu{
+        display: block;
+    }
+    
+    #ingred-single-base.grid-container-static, #ingred-single-mix.grid-container-static, #blog-sub{
+        flex-wrap: wrap;
+    }
+    
+    #ingred-single-base .col2-3, #ingred-single-mix .col2-3, #blog-sub .col2-3{
+        flex: 1 1 100%;
+    }
+    
+    #ingred-single-base img{
+        display: none;
+    }
+    
+    .feature-img img{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .photo-card{
         flex: 0 1 48%;
     }
+    
+    #contact.grid-container-static{
+        flex-wrap: wrap;
+    }
+    
+    #contact .col1-3{
+        flex: 1 1 100%;
+    }
+    
+    #contact .col1-3 section{
+        width: 100%;
+        display: block;
+    }
+    
+    #about-content.grid-container-static{
+        flex-wrap: wrap;
+    }
+    
+    #about-content .col1-3{
+        flex: 1 1 100%;
+    }
+    
+    #about-content .col1-3 section{
+        width: 100%;
+        display: block;
+    }
 }
 
+@media screen and (max-width: 500px) {
+    
+    h1{
+        font-size: 2.2em;
+    }
+    
+    .nav-container {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .footer-container {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-col-logo {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-col-group {
+        float: none;
+    }
+    
+    .nav-col-menu{
+        padding: 10px;
+    }
+
+    .nav-item {
+        float: left;
+    }
+
+    .footer-col-group {
+        float: right;
+    }
+
+    .footer-item {
+        float: right;
+    }
+    
+    .grid-container{
+        max-width: 100%;
+    }
+
+    .community-modal, .recipe-text, .recipe-img{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .grid-container .col-full {
+        width: 100%;
+    }
+
+    .grid-container-static{
+        flex-wrap: wrap;
+    }
+
+    .grid-container-static, .col1-2, .col1-3{
+        width: 100%;
+    }
+    
+    section{
+        display: inline-block;
+    }
+    
+    #billing-form .col1-3, #billing-form .col2-3{
+        flex: 1 1 100%;
+    }
+    
+    
+}
 
 /*
 
@@ -749,18 +878,23 @@ INGREDIENTS PAGE ELEMENTS
 
 */
 
-#ingred-sub p {
+#ingred-sub-base p, #ingred-sub-mix p {
     font-size: 1.2em;
     font-weight: 100;
 }
 
-#ingred-single h2 {
+#ingred-sub-base h2, #ingred-sub-mix h2 {
     text-align: left;
 }
 
-#ingred-single img {
+#ingred-sub-base img, #ingred-sub-mix img {
     padding-top: 2em;
 }
+
+#ingred-single-mix .photo-card{
+        flex: 1 1 33%;
+ }
+
 
 /*
 
@@ -794,6 +928,56 @@ BLOG ELEMENTS
 }
 
 
+/* SVG ANIMATION */
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
 
 
 
