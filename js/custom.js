@@ -52,6 +52,7 @@ $(document).ready(function(){
     });
     
     
+    
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -74,4 +75,19 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+
+$(window).resize(function(){
+   var ww = window.innerWidth;
+    if(ww > 1024){
+        $(".nav-col-group").css("display", "block");
+    }else{
+        if($(".nav-col-menu button").text() == "X"){
+            $(".nav-col-group").css("display", "block");
+            
+        }else{
+            $(".nav-col-group").css("display", "none"); 
+        }
+    }
+    
 });
