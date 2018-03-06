@@ -37,7 +37,7 @@ $(document).ready(function(){
         $("#confirm-order").fadeOut(1000);;
     });
     
-    $(".nav-col-menu button").click(function(){
+    $(".nav-col-menu .nav-button").click(function(){
         if($(this).text() == "X"){
             $(".nav-col-group").slideUp();
             $(".grid-container").css("display", "flex");
